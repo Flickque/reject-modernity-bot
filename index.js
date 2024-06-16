@@ -3,6 +3,8 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 const bot = new Telegraf(process.env.TELEGRAM_BOT_API_KEY);
+const port = 3005;
+const domain = process.env.RENDER_EXTERNAL_URL ? process.env.RENDER_EXTERNAL_URL : 'https://reject-modernity-bot.onrender.com';
 
 const dictionaryMap = new Map([
     ['понедельник', 'monday'],
@@ -34,15 +36,6 @@ bot.on('message', (ctx) => {
     }
 });
 
-const PORT = process.env.PORT || 3000;
-
-bot.launch({
-    webhook: {
-        port: PORT
-    }
-}).then(() => {
-    console.log(`Bot is running on port ${PORT}`);
-}).catch((err) => {
-    console.error('Error starting bot:', err);
-});
-
+bot
+    .launch({ webhook: { domain, port: port } })
+    .then(() => console.log("Webhook bot listening on port", port));
