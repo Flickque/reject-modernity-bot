@@ -1,4 +1,5 @@
 services:
-  - name: telegram-bot
+  - name: reject-modernity-bot
     type: worker
+    runtime: node
     startCommand: npm start
