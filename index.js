@@ -9,11 +9,11 @@ const domain = process.env.RENDER_EXTERNAL_URL ? process.env.RENDER_EXTERNAL_URL
 const dictionaryMap = new Map([
     ['понедельник', 'monday'],
     ['вторник', 'tuesday'],
-    ['среда', 'wednesday'],
+    ['сред', 'wednesday'],
     ['четверг', 'thursday'],
-    ['пятница', 'friday'],
-    ['суббота', 'saturday'],
-    ['воскресенье', 'sunday'],
+    ['пятниц', 'friday'],
+    ['суббот', 'saturday'],
+    ['воскресень', 'sunday'],
     ['праздник', 'holiday'],
 ]);
 
