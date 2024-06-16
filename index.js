@@ -34,5 +34,15 @@ bot.on('message', (ctx) => {
     }
 });
 
-bot.launch();
+const PORT = process.env.PORT || 3000;
+
+bot.launch({
+    webhook: {
+        port: PORT
+    }
+}).then(() => {
+    console.log(`Bot is running on port ${PORT}`);
+}).catch((err) => {
+    console.error('Error starting bot:', err);
+});
 

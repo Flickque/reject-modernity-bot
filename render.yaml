@@ -1,5 +1,0 @@
-services:
-  - name: reject-modernity-bot
-    type: worker
-    runtime: node
-    startCommand: npm start
