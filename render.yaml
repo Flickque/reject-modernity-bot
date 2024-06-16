@@ -1,0 +1,4 @@
+services:
+  - name: telegram-bot
+    type: worker
+    startCommand: npm start
