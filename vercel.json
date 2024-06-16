@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "api": {
-      "handler": "src/index.js"
-    }
-  }
-}
