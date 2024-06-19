@@ -7,14 +7,15 @@ const port = 3005;
 const domain = process.env.RENDER_EXTERNAL_URL ? process.env.RENDER_EXTERNAL_URL : 'https://reject-modernity-bot.onrender.com';
 
 const dictionaryMap = new Map([
-    ['понедельник', {name: 'monday', length: 1}],
-    ['вторник',  {name: 'tuesday', length: 2}],
+    ['понедельник', {name: 'monday', length: 3}],
+    ['вторник',  {name: 'tuesday', length: 3}],
     ['сред',  {name: 'wednesday', length: 3}],
-    ['четверг',  {name: 'thursday', length: 2}],
+    ['четверг',  {name: 'thursday', length: 4}],
     ['пятниц',  {name: 'friday', length: 3}],
-    ['суббот',  {name: 'saturday', length: 1}],
-    ['воскресень',  {name: 'sunday', length: 2}],
+    ['суббот',  {name: 'saturday', length: 2}],
+    ['воскресень',  {name: 'sunday', length: 3}],
     ['праздник',  {name: 'holiday', length: 1}],
+    ['харош',  {name: 'chad', length: 1}],
 ]);
 
 const getRandomNumber = (n) => {
