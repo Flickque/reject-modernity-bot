@@ -13,9 +13,13 @@ const dictionaryMap = new Map([
     ['четверг',  {name: 'thursday', length: 3}],
     ['пятниц',  {name: 'friday', length: 3}],
     ['суббот',  {name: 'saturday', length: 2}],
-    ['воскресень',  {name: 'sunday', length: 3}],
+    ['воскресень',  {name: 'sunday', length: 4}],
     ['праздник',  {name: 'holiday', length: 1}],
     ['харош',  {name: 'chad', length: 1}],
+    ['тряска',  {name: 'tryaska', length: 1}],
+    ['обязан',  {name: 'obyazan', length: 1}],
+    ['не обязан',  {name: 'neobyazan', length: 1}],
+    ['аларм',  {name: 'alarm', length: 1}],
 ]);
 
 const getRandomNumber = (n) => {
