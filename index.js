@@ -21,6 +21,8 @@ const dictionaryMap = new Map([
     ['обязан',  {name: 'obyazan', length: 1}],
     ['аларм',  {name: 'alarm', length: 2}],
     ['ебут',  {name: 'ebut', length: 1}],
+    ['проебали',  {name: 'proebali', length: 1}],
+    ['выебали',  {name: 'viebali', length: 1}],
 ]);
 
 const getRandomNumber = (n) => {
