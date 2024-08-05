@@ -17,8 +17,8 @@ const dictionaryMap = new Map([
     ['праздник',  {name: 'holiday', length: 1}],
     ['харош',  {name: 'chad', length: 1}],
     ['тряска',  {name: 'tryaska', length: 1}],
-    ['обязан',  {name: 'obyazan', length: 1}],
     ['не обязан',  {name: 'neobyazan', length: 1}],
+    ['обязан',  {name: 'obyazan', length: 1}],
     ['аларм',  {name: 'alarm', length: 1}],
 ]);
 
